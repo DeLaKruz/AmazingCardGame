@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondojuego">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCC205"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/menu"
+            app:title="Amazing Card Game" />
+
+        <LinearLayout
+            android:id="@+id/heartsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/heart1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heart2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heart3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heart4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heart5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/heart" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="409dp"
+            android:layout_height="665dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heartsLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:itemIconTint="@android:color/holo_orange_light"
+        app:itemRippleColor="#D5B906"
+        app:itemShapeFillColor="@color/common_google_signin_btn_text_dark_disabled"
+        app:menu="@menu/menu2">
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

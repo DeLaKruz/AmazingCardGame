@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mariomode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:iconTint="?attr/colorControlNormal"
+        android:title="Mario Bros" />
+    <item
+        android:id="@+id/pokemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Pokémon" />
+    <item
+        android:id="@+id/hollowknightmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Hollow Knight" />
+</menu>
