@@ -180,6 +180,7 @@ class MainActivity : AppCompatActivity(), Adaptador.OnItemClickListener {
         findViewById<ImageView>(R.id.heart3).visibility = View.VISIBLE
         findViewById<ImageView>(R.id.heart4).visibility = View.VISIBLE
         findViewById<ImageView>(R.id.heart5).visibility = View.VISIBLE
+        vidas = 5
         adaptador.notifyDataSetChanged()
     }
 
